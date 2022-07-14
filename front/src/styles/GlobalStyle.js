@@ -1,0 +1,34 @@
+import { createGlobalStyle } from 'styled-components';
+import { reset } from 'styled-reset';
+
+const GlobalStyle = createGlobalStyle`
+  ${reset}
+  a {
+  text-decoration: none;
+  color: inherit; }
+
+  button,
+  input,
+  select,
+  textarea {
+    border: 0;
+    background-color: transparent; }
+    button:focus,
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      box-shadow: none; }
+
+  a,
+  button {
+    cursor: pointer; }
+
+  ul,
+  ol {
+    padding-left: 0;
+    list-style: none; }
+
+`;
+
+export default GlobalStyle;
