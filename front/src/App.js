@@ -1,18 +1,23 @@
 import React from 'react';
 import GlobalStyle from './styles/GlobalStyle';
-import Button from './components/modules/Buttons/Button';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/Theme';
+import Header from './components/common/Header';
+import Card from './pages/Card';
+import Bank from './pages/Bank';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <h1>asddsa</h1>
-      <Button color={theme.buttonViolet}>dsadas</Button>
-      <Button color={theme.buttonMustard}>dsadas</Button>
-      <Button color={theme.buttonGreen}>dsadas</Button>
-      <Button color={theme.buttonWhite}>dsadas</Button>
-      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Card />} />
+          <Route path="/bank" element={<Bank />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };
