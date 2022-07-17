@@ -28,6 +28,9 @@ const theme = {
 
   carouselMobileMd: `@media screen and (min-width: 426px)
   `,
+
+  sectionMobile: `@media screen and (max-width: 768px)`,
+  sectionDesktop: `@media screen and (min-width: 767px)`,
 };
 
 export default theme;
