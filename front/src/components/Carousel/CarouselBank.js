@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import theme from '../../styles/Theme';
 import carouselBankImage from '../../assets/carousel-bank.svg';
 import CarouselButton from '../modules/Buttons/CarouselButton';
+import CarouselNavigation from './CarouselNavigation';
 
 const CarouselWrapper = styled.div`
   position: relative;
@@ -37,6 +38,16 @@ const CarouselWrapper = styled.div`
       height: 1855px;
       transform: translate(66%, -50%);
     }
+  }
+  ::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 158px;
+    opacity: 0.1;
+    background: linear-gradient(180deg, rgba(43, 43, 43, 0), #2b2b2b);
   }
 `;
 

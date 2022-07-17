@@ -35,6 +35,16 @@ const CarouselWrapper = styled.div`
       transform: translate(84%, -47%);
     }
   }
+  ::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 158px;
+    opacity: 0.1;
+    background: linear-gradient(180deg, rgba(43, 43, 43, 0), #2b2b2b);
+  }
 `;
 
 const CarouselStyled = styled.div`
