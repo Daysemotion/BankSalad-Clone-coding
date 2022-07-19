@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import prevButton from '../../../assets/button/prevButton.svg';
+import theme from '../../../styles/Theme';
 
 const ChevronPrevButtonStyled = styled.button`
   display: inline-flex;
@@ -8,10 +9,9 @@ const ChevronPrevButtonStyled = styled.button`
   align-items: center;
   width: 30px;
   height: 30px;
-  color: transparent;
+  color: ${theme.border};
   border-radius: 2px;
   box-shadow: 0 0 2px 0 rgb(0 0 0 / 26%);
-
   img {
     width: 12px;
     height: 12px;

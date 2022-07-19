@@ -24,7 +24,7 @@ const FeatureTitle = styled.h1`
 
 const Features = styled.ul`
   display: block;
-  margin: 42px 0;
+  margin: 42px 0 0;
 
   li {
     width: 100%;
@@ -34,6 +34,8 @@ const Features = styled.ul`
 
     ${theme.sectionDesktop} {
       flex-direction: column;
+      padding: 0 16px;
+      width: 33%;
     }
   }
 
@@ -55,14 +57,29 @@ const ImageWrapper = styled.div`
   img {
     width: 90px;
     height: 87px;
+
+    ${theme.sectionDesktop} {
+      width: 160px;
+      height: 110px;
+      margin-bottom: 16px;
+    }
   }
 `;
 
 const DescWrapper = styled.div`
+  ${theme.sectionMobile} {
+    display: inline-block;
+    width: calc(100% - 102px);
+    margin-left: 12px;
+  }
   h1 {
     font-weight: 500;
     color: #434444;
     letter-spacing: -1px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    text-align: center;
 
     ${theme.sectionMobile} {
       font-size: 16px;
@@ -75,6 +92,7 @@ const DescWrapper = styled.div`
     font-size: 16px;
     line-height: 26px;
     letter-spacing: -1px;
+    text-align: center;
     color: ${theme.primary};
     ${theme.sectionMobile} {
       font-size: 14px;

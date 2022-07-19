@@ -3,7 +3,7 @@ import GlobalStyle from './styles/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/Theme';
 import Header from './components/common/Header';
-import Card from './pages/Card';
+import Home from './pages/Home';
 import Bank from './pages/Bank';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Card />} />
+          <Route path="/" element={<Home />} />
           <Route path="/bank" element={<Bank />} />
         </Routes>
       </BrowserRouter>
